@@ -1,0 +1,12 @@
+Components
+    Navbar
+        Button
+    Work
+    Stripe
+        stripe Components
+    products
+        product
+    marque
+    Blocks
+        Block
+    footer
