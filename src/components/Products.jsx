@@ -34,7 +34,7 @@ const Products = () => {
   ];
 
   return (
-    <div>
+    <div className="px-20">
         {productData.map((elem, index)=>(
             <Product elem={elem} />
         ))}
