@@ -1,10 +1,10 @@
 import React from "react";
 import "remixicon/fonts/remixicon.css";
 
-const ButtonNav = () => {
+const ButtonNav = ({title = "Get Started"}) => {
   return (
-    <div className="px-4 py-1 flex items-center gap-0.5 bg-white rounded-full text-black">
-      <button className="text-md">Get Started</button>
+    <div className="px-4 py-1 w-fit flex items-center gap-0.5 bg-white rounded-full text-black">
+      <button className="text-md">{title}</button>
       <svg
         stroke="currentColor"
         fill="currentColor"
