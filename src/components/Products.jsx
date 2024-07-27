@@ -47,28 +47,60 @@ const Products = () => {
         <motion.div
           initial={{ y: position, x: "-50%" }}
           animate={{ y: position + `rem`, x: "-50%" }}
-          className="window w-[32vw] h-[23rem] bg-white absolute left-[42%] -translate-x-[50%] overflow-hidden"
+          className="window w-[35vw] h-[23rem] absolute left-[42%] -translate-x-[50%] overflow-hidden"
         >
           <motion.div
             animate={{ y: -position + `rem` }}
             transition={{ ease: [0.45, 0, 0.55, 1], duration: 0.5 }}
-            className="w-full h-full bg-sky-200"
-          ></motion.div>
+            className="w-full h-full"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              className="h-full w-full object-cover object-center"
+              src="src/assets/videos/arqitel.webm"
+            ></video>
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
             transition={{ ease: [0.45, 0, 0.55, 1], duration: 0.5 }}
-            className="w-full h-full bg-sky-300"
-          ></motion.div>
+            className="w-full h-full"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              className="h-full w-full object-cover object-center"
+              src="src/assets/videos/ttr.webm"
+            ></video>
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
             transition={{ ease: [0.45, 0, 0.55, 1], duration: 0.5 }}
-            className="w-full h-full bg-sky-400"
-          ></motion.div>
+            className="w-full h-full"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              className="h-full w-full object-cover object-center"
+              src="src/assets/videos/yir.webm"
+            ></video>
+          </motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
             transition={{ ease: [0.45, 0, 0.55, 1], duration: 0.5 }}
-            className="w-full h-full bg-sky-500"
-          ></motion.div>
+            className="w-full h-full"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              className="h-full w-full object-cover object-center"
+              src="src/assets/videos/yahoo.webm"
+            ></video>
+          </motion.div>
         </motion.div>
       </div>
     </div>
