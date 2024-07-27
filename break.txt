@@ -10,3 +10,6 @@ Components
     Blocks
         Block
     footer
+
+locomotive js
+Animation of Work Component

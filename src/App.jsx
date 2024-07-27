@@ -1,4 +1,5 @@
 import React from 'react';
+import LocomotiveScroll from 'locomotive-scroll';
 import Navbar from './components/Navbar';
 import Work from './components/Work';
 import Stripes from './components/Stripes';
@@ -8,6 +9,9 @@ import Cards from './components/Cards';
 import Footer from './components/Footer';
 
 const App = () => {
+    const locomotiveScroll = new LocomotiveScroll();
+
+    
     return (
         <div className='w-full h-screen font-[satoshi_variables]'>
             <Navbar />
