@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+
 
 const Work = () => {
-  const images = [
+ 
+
+  const [images,setImage] = useState([
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef09178195ce0073e38f3_Refokus%20Tools-1.png",
       top: "50%",
@@ -38,7 +42,48 @@ const Work = () => {
       left: "55%",
       isActive: false,
     },
-  ];
+  ])
+
+  const { scrollYProgress}  = useScroll();
+
+  
+  scrollYProgress.on("change", (data)=>{
+    function imageShow(arr){
+      setImage((prev)=>
+        prev.map((item,index) => (
+          arr.indexOf(index) === -1 ?
+            {...item,isActive:false} 
+          : {...item,isActive:true}
+        ))
+      )
+    }
+
+    switch(Math.floor(data*100)){
+      case 1:
+        imageShow([])
+        break;
+      case 2:
+        imageShow([0])
+        break;
+      case 3:
+        imageShow([0,1])
+        break;
+      case 4:
+        imageShow([0,1,2])
+        break;
+      case 5:
+        imageShow([0,1,2,3])
+        break;
+      case 6:
+        imageShow([0,1,2,3,4])
+        break;
+      case 7:
+        imageShow([0,1,2,3,4,5])
+        break;
+      
+    }
+  })
+  
 
   return (
     <div className="w-full flex items-center justify-center">

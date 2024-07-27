@@ -32,7 +32,7 @@ const Marquees = () => {
     return (
         <div className='py-24'>
             {imagesData.map((elem,index)=>(
-                <Marque imgUrl={elem}/>
+                <Marque key={index} imgUrl={elem}/>
             ))}
         </div>
     );

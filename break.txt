@@ -12,4 +12,6 @@ Components
     footer
 
 locomotive js
-Animation of Work Component
+Animation of Work Component -> Framer motion useScroll
+Jab value 25 -> fisrt image
+jab value 50 -> second image
