@@ -13,7 +13,7 @@ const App = () => {
 
     
     return (
-        <div className='w-full h-screen font-[satoshi_variables]'>
+        <div className='w-full h-screen font-[satoshi_variables] bg-[#111111] text-white'>
             <Navbar />
             <Work />
             <Stripes />

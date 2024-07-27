@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 
-const Card = ({ width, start, para, hover = false }) => {
+const Card = ({ width, start, para, hover = false, heading}) => {
   return (
     <motion.div
       whileHover={{ backgroundColor: hover === true && "#8B5CF6", padding:"25px" }}
@@ -10,11 +10,11 @@ const Card = ({ width, start, para, hover = false }) => {
     >
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
-          <h3 className="text-lg">Hadding 1</h3>
+          <h3 className="text-lg">{heading[0]}</h3>
           <IoIosArrowRoundForward />
         </div>
         <div className="mt-5">
-          <h1 className="text-3xl font-medium">headding 2</h1>
+          <h1 className="text-3xl font-medium">{heading[1]}</h1>
         </div>
       </div>
       <div className="down w-full mt-56 space-y-5">
