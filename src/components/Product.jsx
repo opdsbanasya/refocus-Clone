@@ -1,10 +1,10 @@
 import React from 'react';
 import ButtonNav from './ButtonNav';
 
-const Product = ({elem}) => {
+const Product = ({elem, mover, count}) => {
     return (
-        <div className='w-full py-20 '>
-            <div className='max-w-screen-xl mx-auto flex items-center justify-between'>
+        <div className='w-full py-20 px-20 h-[23rem]'>
+            <div onMouseEnter={()=>{mover(count)}} className='max-w-screen-xl mx-auto flex items-center justify-between'>
                 <h1 className='text-5xl capitalize font-medium'>{elem.title}</h1>
                 <div className="details w-1/3 space-y-10">
                     <p>{elem.description}</p>
@@ -16,6 +16,6 @@ const Product = ({elem}) => {
             </div>
         </div>
     );
-}
+} 
 
 export default Product;
