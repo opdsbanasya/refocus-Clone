@@ -30,9 +30,9 @@ const Marquees = () => {
     ]
 
     return (
-        <div className='py-24'>
+        <div className='py-24 w-full relative overflow-hidden'>
             {imagesData.map((elem,index)=>(
-                <Marque key={index} imgUrl={elem}/>
+                <Marque key={index} imgUrl={elem} direction={index === 0 ? "left" : "right"}/>
             ))}
         </div>
     );
