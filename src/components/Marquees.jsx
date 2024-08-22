@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Marque from './Marque';
 
 const Marquees = () => {
@@ -30,7 +30,7 @@ const Marquees = () => {
     ]
 
     return (
-        <div className='py-24 w-full relative overflow-hidden'>
+        <div className='py-24 w-full relative overflow-hidden bg-[#111111]'>
             {imagesData.map((elem,index)=>(
                 <Marque key={index} imgUrl={elem} direction={index === 0 ? "left" : "right"}/>
             ))}

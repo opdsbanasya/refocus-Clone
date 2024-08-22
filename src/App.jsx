@@ -1,4 +1,4 @@
-import React from 'react';
+
 import LocomotiveScroll from 'locomotive-scroll';
 import Navbar from './components/Navbar';
 import Work from './components/Work';
@@ -13,7 +13,7 @@ const App = () => {
 
     
     return (
-        <div className='w-full h-screen font-[satoshi_variables] bg-[#111111] text-white'>
+        <div className='w-full min-h-screen font-[satoshi_variables] bg-[#111111] text-white'>
             <Navbar />
             <Work />
             <Stripes />

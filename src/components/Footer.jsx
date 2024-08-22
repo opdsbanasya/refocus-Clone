@@ -1,8 +1,7 @@
-import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='w-full h-[40vh] flex'>
+        <div className='w-full h-fit flex bg-[#111111] pb-10'>
             <section className='w-[60%] h-full grid place-items-center'>
                 <h1 className='text-[16vw] leading-none tracking-tighter font-semibold'>refokus.</h1>
             </section>

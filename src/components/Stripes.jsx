@@ -1,5 +1,4 @@
-import React from 'react';
-import Strip from '../Strip';
+import Strip from './Strip';
 
 const Stripes = () => {
 
@@ -13,7 +12,7 @@ const Stripes = () => {
     ]
 
     return (
-        <div className='flex w-full py-32'>
+        <div className='flex w-full py-32 bg-[#111111]'>
             {stripeData.map((item, index)=>(
                 <Strip key={index} elem={item} />
             ))}
