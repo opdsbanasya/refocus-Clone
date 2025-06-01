@@ -2,6 +2,8 @@
 - This is a clone of the Refocus Work page. It is a static website that is built using HTML, CSS, JavaScript and React.
 - The page have animation and slow scroll effect.
 
+## Explore the [link](https://refocus-work-page.vercel.app/)
+
 ## Technologies used
 I have used the following technologies to build this project:
 - `HTML`: To build the structure of the page.
